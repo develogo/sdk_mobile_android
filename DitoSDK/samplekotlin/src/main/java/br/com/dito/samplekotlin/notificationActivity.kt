@@ -1,6 +1,6 @@
 package br.com.dito.samplekotlin
 
-import android.support.v7.app.AppCompatActivity
+import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 
 class notificationActivity : AppCompatActivity() {

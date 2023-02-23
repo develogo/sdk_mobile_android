@@ -2,8 +2,8 @@ package br.com.dito.ditosdk
 
 import android.content.Context
 import android.content.pm.PackageManager
-import android.support.annotation.NonNull
-import android.support.annotation.Nullable
+import androidx.annotation.NonNull
+import androidx.annotation.Nullable
 import br.com.dito.ditosdk.offline.DitoSqlHelper
 import br.com.dito.ditosdk.service.RemoteService
 import br.com.dito.ditosdk.tracking.Tracker

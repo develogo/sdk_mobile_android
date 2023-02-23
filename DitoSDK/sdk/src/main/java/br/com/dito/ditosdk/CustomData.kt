@@ -1,6 +1,6 @@
 package br.com.dito.ditosdk
 
-import android.support.annotation.NonNull
+import androidx.annotation.NonNull
 
 class CustomData {
 

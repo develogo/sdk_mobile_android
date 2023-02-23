@@ -8,7 +8,7 @@
     </application>
 
     <instrumentation
-            android:name="android.support.test.runner.AndroidJUnitRunner"
+            android:name="androidx.test.runner.AndroidJUnitRunner"
             android:targetPackage="br.com.dito.ditosdk"
             android:targetProcesses="*" > <!-- The instrumentation attribute introduced in O -->
 

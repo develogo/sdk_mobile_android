@@ -1,6 +1,6 @@
 package br.com.dito.ditosdk.tracking
 
-import android.support.annotation.Nullable
+import androidx.annotation.Nullable
 import android.util.Log
 import br.com.dito.ditosdk.EventOff
 import br.com.dito.ditosdk.IdentifyOff

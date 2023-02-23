@@ -1,6 +1,6 @@
 package br.com.dito.ditosdk.tracking
 
-import android.support.annotation.NonNull
+import androidx.annotation.NonNull
 import android.util.Log
 import br.com.dito.ditosdk.Event
 import br.com.dito.ditosdk.Identify
@@ -39,7 +39,7 @@ internal class Tracker(private var apiKey: String, apiSecret: String, private va
     fun identify(@NonNull identify: Identify, @NonNull api: LoginApi, callback: (() -> Unit)?) {
         GlobalScope.launch(Dispatchers.IO) {
             Log.d("begin-identify", "begin identify user")
-            Log.d("begin-identify", "Felipe Teste")
+            Log.d("begin-identify", "Felipe Testesss")
 
             id = identify.id
             val params = SigunpRequest(apiKey, apiSecret, identify)
