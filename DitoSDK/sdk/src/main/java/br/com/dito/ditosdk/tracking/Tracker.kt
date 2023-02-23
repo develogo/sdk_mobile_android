@@ -39,6 +39,8 @@ internal class Tracker(private var apiKey: String, apiSecret: String, private va
     fun identify(@NonNull identify: Identify, @NonNull api: LoginApi, callback: (() -> Unit)?) {
         GlobalScope.launch(Dispatchers.IO) {
             Log.d("begin-identify", "begin identify user")
+            Log.d("begin-identify", "Felipe Teste")
+
             id = identify.id
             val params = SigunpRequest(apiKey, apiSecret, identify)
             try {
@@ -78,10 +80,12 @@ internal class Tracker(private var apiKey: String, apiSecret: String, private va
     fun registerToken(@NonNull token: String, @NonNull api: NotificationApi) {
         GlobalScope.launch(Dispatchers.IO) {
             try {
+                Log.d("begin-identify", "Registrando token")
                 val params = TokenRequest(apiKey, apiSecret, token)
                 val response = api.add(id, params).await()
 
                 if (!response.isSuccessful) {
+
                     Log.d("Tracker", response.errorBody().toString())
                 }
             } catch (e: Exception) {
